@@ -11,6 +11,7 @@ function App() {
           path="/component-composition"
           element={<ComponentComposition />}
         />
+        <Route path="*" element={<p>Not found!</p>} />
       </Routes>
     </HashRouter>
   );

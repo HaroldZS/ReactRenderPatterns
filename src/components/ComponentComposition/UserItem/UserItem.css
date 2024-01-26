@@ -1,0 +1,10 @@
+.user-container {
+  display: flex;
+}
+
+.user-column {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid black;
+  margin: 5px;
+}
