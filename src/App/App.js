@@ -1,4 +1,5 @@
 import { ComponentComposition } from "../routes/ComponentComposition/ComponentComposition";
+import { RenderFunctions } from "../routes/RenderFunctions/RenderFunctions";
 import "./App.css";
 import { HashRouter, Route, Routes } from "react-router-dom";
 
@@ -11,6 +12,7 @@ function App() {
           path="/component-composition"
           element={<ComponentComposition />}
         />
+        <Route path="/render-functions" element={<RenderFunctions />} />
         <Route path="*" element={<p>Not found!</p>} />
       </Routes>
     </HashRouter>
