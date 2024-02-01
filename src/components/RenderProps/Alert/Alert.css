@@ -1,0 +1,27 @@
+.alert {
+  max-width: 400px;
+  margin: 15px auto;
+  color: white;
+  padding: 10px 15px;
+  margin-bottom: 16px;
+  border-radius: 3px;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 1.5s ease;
+}
+
+.alert-error {
+  background-color: #f44336;
+}
+
+.alert-success {
+  background-color: #4caf50;
+}
+
+.alert.visible {
+  opacity: 1;
+}
+
+.alert.hidden {
+  opacity: 0;
+}
