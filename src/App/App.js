@@ -1,4 +1,5 @@
 import { ComponentComposition } from "../routes/ComponentComposition/ComponentComposition";
+import { BooksExercise } from "../routes/RenderFunctions/BooksExercise/BooksExercise";
 import { RenderFunctions } from "../routes/RenderFunctions/RenderFunctions";
 import { RenderProps } from "../routes/RenderProps/RenderProps";
 import "./App.css";
@@ -14,6 +15,10 @@ function App() {
           element={<ComponentComposition />}
         />
         <Route path="/render-functions" element={<RenderFunctions />} />
+        <Route
+          path="/render-functions/books-exercise"
+          element={<BooksExercise />}
+        />
         <Route path="/render-props" element={<RenderProps />} />
         <Route path="*" element={<p>Not found!</p>} />
       </Routes>
