@@ -1,3 +1,4 @@
+import { ChildrenCloneElement } from "../routes/ChildrenCloneElement/ChildrenCloneElement";
 import { ComponentComposition } from "../routes/ComponentComposition/ComponentComposition";
 import { BooksExercise } from "../routes/RenderFunctions/BooksExercise/BooksExercise";
 import { RenderFunctions } from "../routes/RenderFunctions/RenderFunctions";
@@ -20,6 +21,10 @@ function App() {
           element={<BooksExercise />}
         />
         <Route path="/render-props" element={<RenderProps />} />
+        <Route
+          path="/children-clone-element"
+          element={<ChildrenCloneElement />}
+        />
         <Route path="*" element={<p>Not found!</p>} />
       </Routes>
     </HashRouter>
