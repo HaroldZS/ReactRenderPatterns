@@ -1,0 +1,43 @@
+.policeman {
+  width: 200px;
+  height: 300px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.policeman .head {
+  width: 80px;
+  height: 80px;
+  background-color: #1b1b1b;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.policeman .body {
+  width: 140px;
+  height: 200px;
+  background-color: #140860;
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.crossing {
+  position: absolute;
+  width: 150px;
+  height: 118px;
+  background-color: yellow;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  clip-path: polygon(50% 0%, 85% 25%, 85% 75%, 50% 100%, 15% 75%, 15% 25%);
+}

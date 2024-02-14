@@ -1,5 +1,6 @@
 import { ChildrenCloneElement } from "../routes/ChildrenCloneElement/ChildrenCloneElement";
 import { ComponentComposition } from "../routes/ComponentComposition/ComponentComposition";
+import { CustomHooks } from "../routes/CustomHooks/CustomHooks";
 import { HighOrderComponents } from "../routes/HighOrderComponents/HighOrderComponents";
 import { BooksExercise } from "../routes/RenderFunctions/BooksExercise/BooksExercise";
 import { RenderFunctions } from "../routes/RenderFunctions/RenderFunctions";
@@ -30,6 +31,7 @@ function App() {
           path="/high-order-components"
           element={<HighOrderComponents />}
         />
+        <Route path="/custom-hooks" element={<CustomHooks />} />
         <Route path="*" element={<p>Not found!</p>} />
       </Routes>
     </HashRouter>

@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
-import "./TrafficLight.css";
-import { TrafficMessage } from "../TrafficMessage/TrafficMessage";
+import "./TrafficLightUsingCH.css";
+import { TrafficMessage } from "../../../components/HighOrderComponents/TrafficMessage/TrafficMessage";
+import { useNearbyPeople } from "../../../routes/CustomHooks/useNearbyPeople";
 
-function TrafficLight({ time, peopleNearby, setPeopleNearby }) {
+function TrafficLightUsingCH() {
+  const { peopleNearby, setPeopleNearby, time } = useNearbyPeople(2000);
   const [{ red, orange, green }, setState] = useState({
     red: true,
     orange: false,
@@ -53,4 +55,4 @@ function TrafficLight({ time, peopleNearby, setPeopleNearby }) {
   );
 }
 
-export { TrafficLight };
+export { TrafficLightUsingCH };
