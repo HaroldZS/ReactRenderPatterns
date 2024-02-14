@@ -1,5 +1,6 @@
 import { ChildrenCloneElement } from "../routes/ChildrenCloneElement/ChildrenCloneElement";
 import { ComponentComposition } from "../routes/ComponentComposition/ComponentComposition";
+import { HighOrderComponents } from "../routes/HighOrderComponents/HighOrderComponents";
 import { BooksExercise } from "../routes/RenderFunctions/BooksExercise/BooksExercise";
 import { RenderFunctions } from "../routes/RenderFunctions/RenderFunctions";
 import { RenderProps } from "../routes/RenderProps/RenderProps";
@@ -24,6 +25,10 @@ function App() {
         <Route
           path="/children-clone-element"
           element={<ChildrenCloneElement />}
+        />
+        <Route
+          path="/high-order-components"
+          element={<HighOrderComponents />}
         />
         <Route path="*" element={<p>Not found!</p>} />
       </Routes>
